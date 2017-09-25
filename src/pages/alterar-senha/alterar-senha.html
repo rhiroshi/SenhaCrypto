@@ -1,0 +1,28 @@
+﻿<ion-header>
+
+  <ion-toolbar>
+    <ion-title>alterarSenha</ion-title>
+    <ion-buttons right>
+      <button ion-button icon-only (click)="fechar()">
+        <ion-icon name="close"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-toolbar>
+
+</ion-header>
+
+
+<ion-content padding>
+
+  <ion-item>
+    <ion-label floating>Senha antiga</ion-label>
+    <ion-input type="text" [(ngModel)]="senhaAntiga"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label floating>Nova senha</ion-label>
+    <ion-input type="text" [(ngModel)]="senhaNova"></ion-input>
+  </ion-item>
+
+  <button ion-button block (click)="alterar()">Alterar</button>
+
+</ion-content>

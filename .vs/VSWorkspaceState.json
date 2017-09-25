@@ -2,8 +2,15 @@
   "ExpandedNodes": [
     "",
     "\\src",
+    "\\src\\app",
     "\\src\\pages",
-    "\\src\\pages\\home"
+    "\\src\\pages\\alterar-senha",
+    "\\src\\pages\\cadastro",
+    "\\src\\pages\\configuracoes",
+    "\\src\\pages\\login",
+    "\\src\\providers",
+    "\\src\\providers\\dao"
   ],
+  "SelectedNode": "\\src\\pages\\registros\\registros.html",
   "PreviewInSolutionExplorer": false
 }

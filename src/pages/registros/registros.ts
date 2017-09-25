@@ -1,25 +1,19 @@
-import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
-
-/**
- * Generated class for the RegistrosPage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
+﻿import { Component } from '@angular/core';
+import { IonicPage, NavController, NavParams, ModalController } from 'ionic-angular';
+import { Dao, Registro } from '../../providers/dao/dao';
 
 @IonicPage()
 @Component({
   selector: 'page-registros',
   templateUrl: 'registros.html',
 })
-export class RegistrosPage {
+export class Registros {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(public modal: ModalController, public dao:Dao, public navCtrl: NavController, public navParams: NavParams) {
   }
 
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad RegistrosPage');
+  novoRegistro() {
+	  this.modal.create('NovoRegistro').present();
   }
 
 }

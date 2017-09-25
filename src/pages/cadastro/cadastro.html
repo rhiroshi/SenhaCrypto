@@ -1,0 +1,21 @@
+﻿<ion-header>
+
+  <ion-navbar>
+    <ion-title>cadastro</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+
+  <ion-item>
+    <ion-label floating>Senha</ion-label>
+    <ion-input typeof="password" [(ngModel)]="senha"></ion-input>
+  </ion-item>
+
+  <p>Essa senha é utilizada para encriptar seus dados. Não perca ela ou não consiguirá mais desencriptar seus dados!!</p>
+
+  <button block ion-button (click)="cadastrar()">Cadastrar Senha</button>
+
+</ion-content>

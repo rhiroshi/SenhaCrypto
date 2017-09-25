@@ -1,0 +1,32 @@
+﻿<ion-header>
+
+  <ion-toolbar>
+    <ion-title>novoRegistro</ion-title>
+    <ion-buttons right>
+      <button ion-button icon-only (click)="fechar()">
+        <ion-icon name="close"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-toolbar>
+
+</ion-header>
+
+
+<ion-content padding>
+
+  <ion-item>
+    <ion-label floating>Aplicação</ion-label>
+    <ion-input typeof="text" [(ngModel)]="registro.aplicacao"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label floating>Usuário</ion-label>
+    <ion-input typeof="text" [(ngModel)]="registro.usuario"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label floating>Senha</ion-label>
+    <ion-input typeof="text" [(ngModel)]="registro.senha"></ion-input>
+  </ion-item>
+
+  <button ion-button (click)="salvar()">Salvar</button>
+
+</ion-content>

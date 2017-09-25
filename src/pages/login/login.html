@@ -1,0 +1,17 @@
+﻿<ion-header>
+
+  <ion-navbar>
+    <ion-title>login</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <ion-item>
+    <ion-label floating>Senha</ion-label>
+    <ion-input type="password" [(ngModel)]="senha"></ion-input>
+  </ion-item>
+  <button block ion-button (click)="logar()">Login</button>
+  <button block ion-button color="danger" (click)="esqueceu()">Esqueci a senha</button>
+</ion-content>
